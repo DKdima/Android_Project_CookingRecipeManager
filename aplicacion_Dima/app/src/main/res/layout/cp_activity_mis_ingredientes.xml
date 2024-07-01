@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_metal"
+    tools:context=".CP_MisIngredientes">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/cs_toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-107dp" />
+
+    <ImageView
+        android:id="@+id/foto_forms2"
+        android:layout_width="389dp"
+        android:layout_height="579dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/fondo_forms_grande"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/paginaMisIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/literal_pantalla_Mis_Ingredientes"
+        android:textColor="@color/dorado"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+
+    <Button
+        android:id="@+id/botonNuevoIngrediente"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="628dp"
+        android:background="@drawable/boton_gris"
+        android:text="@string/literal_boton_Nuevo_Ingrediente"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="393dp"
+        android:layout_height="459dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

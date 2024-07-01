@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CP_NuevoIngrediente"
+    android:background="@drawable/fondo_metal">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/cs_toolbar" />
+
+    <ImageView
+        android:id="@+id/foto_forms"
+        android:layout_width="389dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/fondo_forms"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/foto_ingrediente_nuevo"
+        android:layout_width="119dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/fondo_forms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_image_search_24" />
+
+    <EditText
+        android:id="@+id/nombre_ingrediente_nuevo"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="108dp"
+        android:hint="Nombre del Ingrediente"
+        android:textColor="@color/dorado"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descripcion_ingrediente_nuevo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:hint="Descripcion del ingrediente (Opcional)"
+        android:textColor="@color/dorado"
+        android:maxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_guardar_nuevo_ingrediente"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="264dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/boton_gris"/>
+
+    <Button
+        android:id="@+id/boton_cancelar_nuevo_ingrediente"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="264dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:background="@drawable/boton_gris"/>
+
+    <Button
+        android:id="@+id/boton_eliminar_nuevo_ingrediente"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="264dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:background="@drawable/boton_gris"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

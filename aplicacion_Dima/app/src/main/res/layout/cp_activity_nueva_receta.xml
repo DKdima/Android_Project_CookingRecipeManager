@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_metal"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".CP_NuevaReceta">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/cs_toolbar"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <ImageView
+        android:id="@+id/foto_receta_nueva"
+        android:layout_width="119dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/fondo_forms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:shape="rectangle"
+        app:srcCompat="@drawable/baseline_image_search_24" />
+
+    <ImageView
+        android:id="@+id/foto_forms"
+        android:layout_width="393dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/fondo_forms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp" />
+
+    <ImageView
+        android:id="@+id/foto_forms2"
+        android:layout_width="391dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/fondo_forms_grande"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColor="@color/dorado"
+        android:id="@+id/nombre_receta_nueva"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="84dp"
+        android:hint="Nombre de la receta"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:textColor="@color/dorado"
+        android:id="@+id/descripcion_receta_nueva"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:hint="Descripcion de la receta (Opcional)"
+        android:maxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton_guardar_receta_nueva"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="638dp"
+        android:layout_marginEnd="223dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/include3"
+        app:layout_constraintStart_toStartOf="@+id/include3"
+        app:layout_constraintTop_toTopOf="@+id/include3"
+        android:background="@drawable/boton_gris"/>
+
+
+    <Button
+        android:id="@+id/boton_insertar_ingrediente"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="248dp"
+        android:text="Añadir Ingrediente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/boton_gris"/>
+
+    <Button
+        android:id="@+id/boton_cancelar_receta_nueva"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="636dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:background="@drawable/boton_gris"/>
+
+    <Button
+        android:id="@+id/boton_eliminar_receta_nueva"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="636dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:background="@drawable/boton_gris"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="400dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

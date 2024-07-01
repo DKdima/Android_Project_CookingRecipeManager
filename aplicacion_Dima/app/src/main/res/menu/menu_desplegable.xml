@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion1"
+        android:shape="rectangle"
+        android:title="Página Inicial" />
+    <item
+        android:id="@+id/opcion2"
+        android:title="Mis Recetas" />
+    <item
+        android:id="@+id/opcion3"
+        android:title="Mis Ingredientes" />
+    <!-- Agregar más elementos de menú si es necesario -->
+</menu>

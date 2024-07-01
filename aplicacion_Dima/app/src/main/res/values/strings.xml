@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Receta Perpetua</string>
+    <string name="literal_Saludo">¡Bienvenid@!</string>
+    <string name="literal_boton_Mis_Recetas">Mis Recetas</string>
+    <string name="literal_boton_Nueva_Receta">Nueva Receta</string>
+    <string name="literal_boton_inicio">Volver al Inicio</string>
+    <string name="literal_boton_Nuevo_Ingrediente">Crear Ingrediente</string>
+    <string name="literal_boton_Mis_Ingredientes">Mis Ingredientes</string>
+    <string name="literal_pantalla_Mis_Recetas">Mis Recetas</string>
+    <string name="literal_pantalla_Nueva_Receta">Nueva Receta:</string>
+    <string name="literal_pantalla_Mis_Ingredientes">Seleccione Ingredientes:</string>
+    <string name="literal_nombre">Dmytro Kosanyak Voloshyn</string>
+    <string name="literal_dias_restantes"> Días restantes para Exponer</string>
+    <string name="literal_cocina">¿Qué cocinamos hoy?</string>
+</resources>
